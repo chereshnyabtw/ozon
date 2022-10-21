@@ -1,3 +1,3 @@
 
-rootProject.name = "ozon-kotlin-api"
+rootProject.name = "ozon"
 
