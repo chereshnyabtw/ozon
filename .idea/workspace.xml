@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="ozon">
+    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="getter for services">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetChatList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SendMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SetRead.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/UpdateChat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ChatsService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" afterDir="false" />
@@ -53,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -122,7 +127,8 @@
       <workItem from="1666349949182" duration="3451000" />
       <workItem from="1666550434968" duration="598000" />
       <workItem from="1666551221798" duration="51000" />
-      <workItem from="1666607940669" duration="103000" />
+      <workItem from="1666607940669" duration="189000" />
+      <workItem from="1666614469530" duration="1169000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666357251980</created>
@@ -145,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666360679650</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="getter for services">
+      <created>1666608054275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666608054275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +179,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="bump version" />
     <MESSAGE value="ozon" />
-    <option name="LAST_COMMIT_MESSAGE" value="ozon" />
+    <MESSAGE value="getter for services" />
+    <option name="LAST_COMMIT_MESSAGE" value="getter for services" />
   </component>
 </project>
