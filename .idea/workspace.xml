@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="getter for services">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetChatList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SendMessage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SetRead.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/UpdateChat.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ChatsService.kt" afterDir="false" />
+    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="get analytics data">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetAnalyticsData.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/AnalyticsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/AnalyticsService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +54,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -128,7 +124,8 @@
       <workItem from="1666550434968" duration="598000" />
       <workItem from="1666551221798" duration="51000" />
       <workItem from="1666607940669" duration="189000" />
-      <workItem from="1666614469530" duration="1169000" />
+      <workItem from="1666614469530" duration="1929000" />
+      <workItem from="1666697602787" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666357251980</created>
@@ -158,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666608054275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update chats, get chats, set read message, send message to chat">
+      <created>1666615683401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666615683401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +184,8 @@
     <MESSAGE value="bump version" />
     <MESSAGE value="ozon" />
     <MESSAGE value="getter for services" />
-    <option name="LAST_COMMIT_MESSAGE" value="getter for services" />
+    <MESSAGE value="update chats, get chats, set read message, send message to chat" />
+    <MESSAGE value="get analytics data" />
+    <option name="LAST_COMMIT_MESSAGE" value="get analytics data" />
   </component>
 </project>

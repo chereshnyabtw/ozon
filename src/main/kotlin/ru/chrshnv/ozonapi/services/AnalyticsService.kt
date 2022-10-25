@@ -4,6 +4,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.springframework.http.HttpEntity
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
+import ru.chrshnv.ozonapi.models.GetAnalyticsData
 import ru.chrshnv.ozonapi.models.TurnoverRequest
 import ru.chrshnv.ozonapi.models.TurnoverResponse
 import java.text.DateFormat
@@ -21,6 +22,18 @@ class AnalyticsService {
 				"https://api-seller.ozon.ru/v1/analytics/item_turnover",
 				HttpEntity(json),
 				TurnoverResponse::class.java
+			)
+	}
+
+	fun getAnalytics(data: GetAnalyticsData): ResponseEntity<GetAnalyticsData.GetAnalyticsDataRoot> {
+		val json = jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(data)
+		val restTemplate = RestTemplateConfig.getRestTemplate()
+
+		return restTemplate
+			.postForEntity(
+				"https://api-seller.ozon.ru/v1/analytics/data",
+				HttpEntity(json),
+				GetAnalyticsData.GetAnalyticsDataRoot::class.java
 			)
 	}
 }
