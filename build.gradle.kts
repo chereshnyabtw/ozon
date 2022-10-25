@@ -21,7 +21,7 @@ publishing {
 		create<MavenPublication>("maven") {
 			groupId = "com.github.chereshnyabtw"
 			artifactId = "ozon"
-			version = "1.3.0"
+			version = "1.4.0"
 
 			from(components["kotlin"])
 		}

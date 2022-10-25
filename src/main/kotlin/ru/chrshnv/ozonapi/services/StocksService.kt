@@ -4,6 +4,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.springframework.http.HttpEntity
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
+import ru.chrshnv.ozonapi.models.GetProductInfo
 import ru.chrshnv.ozonapi.models.StocksResponse
 
 class StocksService {
@@ -14,8 +15,16 @@ class StocksService {
 		return restTemplate
 			.postForEntity(
 				"https://api-seller.ozon.ru/v1/analytics/stock_on_warehouses",
-			HttpEntity(json),
-			StocksResponse::class.java
+				HttpEntity(json),
+				StocksResponse::class.java
 			)
+	}
+
+	fun getProductInfo(sku: GetProductInfo): ResponseEntity<GetProductInfo.GetProductInfoRoot> {
+		val json = jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(sku)
+		val restTemplate = RestTemplateConfig.getRestTemplate()
+
+		return restTemplate
+			.postForEntity("https://api-seller.ozon.ru/v2/product/info", HttpEntity(json), GetProductInfo.GetProductInfoRoot::class.java)
 	}
 }
