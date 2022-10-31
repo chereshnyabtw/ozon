@@ -7,21 +7,13 @@ import ru.chrshnv.ozonapi.services.ProductService
 import ru.chrshnv.ozonapi.services.StocksService
 
 class OzonClient(private val clientId: String, private val accessToken: String, private val analyticsService: AnalyticsService = AnalyticsService(), private val stocksService: StocksService = StocksService(), private val chatsService: ChatsService = ChatsService(), private val productService: ProductService = ProductService()) {
-	fun getAnalyticsService(): AnalyticsService {
-		return analyticsService
-	}
+	fun getAnalyticsService(): AnalyticsService = analyticsService
 
-	fun getStocksService(): StocksService {
-		return stocksService
-	}
+	fun getStocksService(): StocksService = stocksService
 
-	fun getChatsService(): ChatsService {
-		return chatsService
-	}
+	fun getChatsService(): ChatsService = chatsService
 
-	fun getProductsService(): ProductService {
-		return productService
-	}
+	fun getProductsService(): ProductService = productService
 
 	fun setup() {
 		Settings.getInstance().clientId = clientId

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="bump version">
+    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/AnalyticsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/AnalyticsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ChatsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ChatsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/StocksService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/StocksService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,7 @@
       <workItem from="1666697602787" duration="4163000" />
       <workItem from="1666704055167" duration="599000" />
       <workItem from="1666755239386" duration="1452000" />
-      <workItem from="1667200127118" duration="4710000" />
+      <workItem from="1667200127118" duration="5945000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666357251980</created>
@@ -208,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667210236109</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix">
+      <created>1667211559942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667211559942</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +240,7 @@
     <MESSAGE value="CreateProducts." />
     <MESSAGE value="code cleanup." />
     <MESSAGE value="bump version" />
-    <option name="LAST_COMMIT_MESSAGE" value="bump version" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
