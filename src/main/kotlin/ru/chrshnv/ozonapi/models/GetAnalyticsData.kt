@@ -3,12 +3,8 @@ package ru.chrshnv.ozonapi.models
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class GetAnalyticsData(
-	@JsonProperty("date_from")
-	val dateFrom: String = "",
-
-	@JsonProperty("date_to")
-	val dateTo: String = "",
-
+	@JsonProperty("date_from") val dateFrom: String = "",
+	@JsonProperty("date_to") val dateTo: String = "",
 	val dimension: ArrayList<String> = arrayListOf(),
 	val metrics: ArrayList<String> = arrayListOf(),
 	val limit:String = "1000"

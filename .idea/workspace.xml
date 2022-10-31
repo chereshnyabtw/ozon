@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="fix">
+    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="code refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/DictionaryValue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetCategoryAttributes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/ProductChangeLimit.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/OzonClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/Attribute.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/Attribute.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetAnalyticsData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetAnalyticsData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetChatList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetChatList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetProductInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetProductInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SendMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SendMessage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SetRead.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/SetRead.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/StocksResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/StocksResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/TurnoverRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/TurnoverRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/TurnoverResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/TurnoverResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ProductService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/ProductService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +139,7 @@
       <workItem from="1666697602787" duration="4163000" />
       <workItem from="1666704055167" duration="599000" />
       <workItem from="1666755239386" duration="1452000" />
-      <workItem from="1667200127118" duration="5945000" />
+      <workItem from="1667200127118" duration="11340000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666357251980</created>
@@ -212,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667211559942</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="code refactoring">
+      <created>1667215417382</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667215417382</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +261,7 @@
     <MESSAGE value="code cleanup." />
     <MESSAGE value="bump version" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
 </project>
