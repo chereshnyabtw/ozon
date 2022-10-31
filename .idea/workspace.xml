@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="get analytics data">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/GetProductInfo.kt" afterDir="false" />
+    <list default="true" id="e7f0050f-54de-4c06-835b-e620ec671aa4" name="Changes" comment="get product info">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/Attribute.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/CreateProduct.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/models/PDFFile.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/StocksService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/chrshnv/ozonapi/services/StocksService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,10 @@
       <workItem from="1666551221798" duration="51000" />
       <workItem from="1666607940669" duration="189000" />
       <workItem from="1666614469530" duration="1929000" />
-      <workItem from="1666697602787" duration="2936000" />
+      <workItem from="1666697602787" duration="4163000" />
+      <workItem from="1666704055167" duration="599000" />
+      <workItem from="1666755239386" duration="1452000" />
+      <workItem from="1667200127118" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1666357251980</created>
@@ -169,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666699670404</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="get product info">
+      <created>1666700651992</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666700651992</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +203,7 @@
     <MESSAGE value="getter for services" />
     <MESSAGE value="update chats, get chats, set read message, send message to chat" />
     <MESSAGE value="get analytics data" />
-    <option name="LAST_COMMIT_MESSAGE" value="get analytics data" />
+    <MESSAGE value="get product info" />
+    <option name="LAST_COMMIT_MESSAGE" value="get product info" />
   </component>
 </project>
