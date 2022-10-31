@@ -13,22 +13,18 @@ data class GetAnalyticsData(
 	val metrics: ArrayList<String> = arrayListOf(),
 	val limit:String = "1000"
 ) {
-	data class GetAnalyticsDataRoot(
-		val result: Result = Result()
+	data class GetAnalyticsDataResponse(
+		val data: ArrayList<Data> = arrayListOf(),
+		val totals: ArrayList<Int> = arrayListOf()
 	) {
-		data class Result(
-			val data: ArrayList<Data> = arrayListOf(),
-			val totals: ArrayList<Int> = arrayListOf()
+		data class Data(
+			val dimensions: ArrayList<Dimension> = arrayListOf(),
+			val metrics: ArrayList<Int> = arrayListOf()
 		) {
-			data class Data(
-				val dimensions: ArrayList<Dimension> = arrayListOf(),
-				val metrics: ArrayList<Int> = arrayListOf()
-			) {
-				data class Dimension(
-					val id: String = "",
-					val name: String = ""
-				)
-			}
+			data class Dimension(
+				val id: String = "",
+				val name: String = ""
+			)
 		}
 	}
 }

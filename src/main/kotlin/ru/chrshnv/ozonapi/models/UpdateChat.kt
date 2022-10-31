@@ -11,12 +11,8 @@ data class UpdateChat(
 
 	val limit: Int = 0
 ) {
-	data class UpdateChatResponse(
-		val result: ArrayList<Result> = arrayListOf()
-	) {
-		data class Result (
-			val text: String = "",
-			val id: String = ""
-		)
-	}
+	data class Message (
+		val text: String = "",
+		val id: String = ""
+	)
 }

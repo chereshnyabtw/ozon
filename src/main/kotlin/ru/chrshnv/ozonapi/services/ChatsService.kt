@@ -1,7 +1,9 @@
 package ru.chrshnv.ozonapi.services
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpEntity
+import org.springframework.http.HttpMethod
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
 import ru.chrshnv.ozonapi.models.GetChatList
@@ -18,12 +20,17 @@ class ChatsService {
 			.postForEntity("https://api-seller.ozon.ru/v2/chat/list", HttpEntity(json), GetChatList.GetChatListResponse::class.java)
 	}
 
-	fun updateChat(updateChat: UpdateChat): ResponseEntity<UpdateChat.UpdateChatResponse> {
+	fun updateChat(updateChat: UpdateChat): ResponseEntity<Result<ArrayList<UpdateChat.Message>>> {
 		val restTemplate = RestTemplateConfig.getRestTemplate()
 		val json = jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(updateChat)
 
 		return restTemplate
-			.postForEntity("https://api-seller.ozon.ru/v1/chat/updates", HttpEntity(json), UpdateChat.UpdateChatResponse::class.java)
+			.exchange(
+				"https://api-seller.ozon.ru/v1/chat/updates",
+				HttpMethod.POST,
+				HttpEntity(json),
+				object : ParameterizedTypeReference<Result<ArrayList<UpdateChat.Message>>> () {}
+			)
 	}
 
 	fun setRead(read: SetRead): ResponseEntity<String> {

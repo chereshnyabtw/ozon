@@ -1,7 +1,9 @@
 package ru.chrshnv.ozonapi.services
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpEntity
+import org.springframework.http.HttpMethod
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
 import ru.chrshnv.ozonapi.models.GetAnalyticsData
@@ -25,15 +27,16 @@ class AnalyticsService {
 			)
 	}
 
-	fun getAnalytics(data: GetAnalyticsData): ResponseEntity<GetAnalyticsData.GetAnalyticsDataRoot> {
+	fun getAnalytics(data: GetAnalyticsData): ResponseEntity<Result<GetAnalyticsData.GetAnalyticsDataResponse>> {
 		val json = jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(data)
 		val restTemplate = RestTemplateConfig.getRestTemplate()
 
 		return restTemplate
-			.postForEntity(
+			.exchange(
 				"https://api-seller.ozon.ru/v1/analytics/data",
+				HttpMethod.POST,
 				HttpEntity(json),
-				GetAnalyticsData.GetAnalyticsDataRoot::class.java
+				object : ParameterizedTypeReference<Result<GetAnalyticsData.GetAnalyticsDataResponse>> () {}
 			)
 	}
 }

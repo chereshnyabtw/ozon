@@ -13,14 +13,13 @@ class ProductService {
 	fun create(product: CreateProduct): ResponseEntity<Result<CreateProduct.CreateProductResponse>> {
 		val restTemplate = RestTemplateConfig.getRestTemplate()
 		val json = jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(product)
-		val tr = object : ParameterizedTypeReference<Result<CreateProduct.CreateProductResponse>>() {}
 
 		return restTemplate
 			.exchange(
 				"https://api-seller.ozon.ru/v2/product/import",
 				HttpMethod.POST,
 				HttpEntity(json),
-				tr
+				object : ParameterizedTypeReference<Result<CreateProduct.CreateProductResponse>>() {}
 			)
 	}
 }
