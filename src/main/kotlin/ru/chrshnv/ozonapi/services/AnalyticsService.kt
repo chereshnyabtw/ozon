@@ -7,6 +7,7 @@ import org.springframework.http.HttpMethod
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
 import ru.chrshnv.ozonapi.models.GetAnalyticsData
+import ru.chrshnv.ozonapi.models.Result
 import ru.chrshnv.ozonapi.models.TurnoverRequest
 import ru.chrshnv.ozonapi.models.TurnoverResponse
 import java.text.DateFormat

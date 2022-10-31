@@ -7,6 +7,7 @@ import org.springframework.http.HttpMethod
 import org.springframework.http.ResponseEntity
 import ru.chrshnv.ozonapi.config.RestTemplateConfig
 import ru.chrshnv.ozonapi.models.GetChatList
+import ru.chrshnv.ozonapi.models.Result
 import ru.chrshnv.ozonapi.models.SendMessage
 import ru.chrshnv.ozonapi.models.SetRead
 import ru.chrshnv.ozonapi.models.UpdateChat
