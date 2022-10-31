@@ -26,4 +26,8 @@ data class CreateProduct(
 	val weight: Int,
 	@get:JsonProperty("weight_unit") val weightUnit: String,
 	val width: Int
-)
+) {
+	data class CreateProductResponse(
+		@get:JsonProperty("task_id") val taskId: Int = 0
+	)
+}
