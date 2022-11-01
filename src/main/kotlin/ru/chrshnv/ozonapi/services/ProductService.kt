@@ -22,7 +22,7 @@ class ProductService {
 			)
 	}
 
-	fun getAttributesForCategory(body: GetCategoryAttributes): ResponseEntity<Result<GetCategoryAttributes.GetCategoryAttributesResponse>> {
+	fun getAttributesForCategory(body: GetCategoryAttributes): ResponseEntity<List<Result<GetCategoryAttributes.GetCategoryAttributesResponse>>> {
 		val restTemplate = RestTemplateConfig.getRestTemplate()
 
 		return restTemplate
@@ -30,7 +30,7 @@ class ProductService {
 				"https://api-seller.ozon.ru/v3/category/attribute",
 				HttpMethod.POST,
 				HttpEntity(jacksonObjectMapper().writer().withDefaultPrettyPrinter().writeValueAsString(body)),
-				object : ParameterizedTypeReference<Result<GetCategoryAttributes.GetCategoryAttributesResponse>> () {}
+				object : ParameterizedTypeReference<List<Result<GetCategoryAttributes.GetCategoryAttributesResponse>>> () {}
 			)
 	}
 
